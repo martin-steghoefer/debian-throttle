@@ -1,5 +1,8 @@
 throttle (1.2-1) unstable; urgency=low
 
   * Initial release (Closes: #692774, #426891)
+  * debian/patches/hyphen-used-as-minus-sign.patch
+    - Get rid of lintian warning "hyphen-used-as-minus-sign" complaining about
+      hyphens in the man page
 
- -- Martin Steghöfer <martin@steghoefer.eu>  Thu, 08 Nov 2012 19:03:28 +0100
+ -- Martin Steghöfer <martin@steghoefer.eu>  Thu, 08 Nov 2012 22:14:51 +0100

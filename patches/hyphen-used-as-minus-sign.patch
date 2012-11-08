@@ -1,0 +1,33 @@
+Description: Escaped minus signs to avoid their conversion into hyphens.
+ More information on the page about the lintian warning tag:
+ http://lintian.debian.org/tags/hyphen-used-as-minus-sign.html
+Author: Martin Steghöfer (private) <martin@steghoefer.de>
+
+--- throttle-1.2.orig/throttle.1
++++ throttle-1.2/throttle.1
+@@ -60,14 +60,14 @@ without waiting for the next window.
+ To limit the bandwidth of a tar back-up to a remote server to 1 Mbit/s, type:
+ .sp
+ .nf
+-$ \fBtar czf - . | throttle -m 1 | ssh host 'tar xzf - -C /bak'\fR
++$ \fBtar czf \- . | throttle \-m 1 | ssh host 'tar xzf \- \-C /bak'\fR
+ .sp
+ .fi
+ .PP
+ To start a pipeline which can by dynamically controlled with \fBthrottle\fR:
+ .sp
+ .nf
+-$ \fB... | throttle -l /tmp/throttle.ctl -m 1 | ... &\fR
++$ \fB... | throttle \-l /tmp/throttle.ctl \-m 1 | ... &\fR
+ .sp
+ .fi
+ This command will start up \fBthrottle\fR
+@@ -75,7 +75,7 @@ communicating through the named fifo /tm
+ this \fBthrottle\fR process, you would need to run another \fBthrottle\fR command as:
+ .sp
+ .nf
+-$ \fBthrottle -t /tmp/throttle.ctl [OPTIONS TO CHANGE]\fR
++$ \fBthrottle \-t /tmp/throttle.ctl [OPTIONS TO CHANGE]\fR
+ .sp
+ .fi
+ .RS
