@@ -1,0 +1,14 @@
+Source: throttle
+Section: utils
+Priority: extra
+Maintainer: Martin Steghöfer <martin@steghoefer.eu>
+Build-Depends: debhelper (>= 8), autotools-dev, dpkg-dev (>= 1.16)
+Standards-Version: 3.9.3
+Homepage: http://klicman.org/throttle/
+
+Package: throttle
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: bandwidth limiting pipe
+ throttle copies the standard input to the standard output while limiting
+ bandwidth to the specified maximum.

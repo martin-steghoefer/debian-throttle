@@ -1,0 +1,5 @@
+throttle (1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #692774, #426891)
+
+ -- Martin Steghöfer <martin@steghoefer.eu>  Thu, 08 Nov 2012 19:03:28 +0100
