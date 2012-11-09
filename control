@@ -11,4 +11,6 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: bandwidth limiting pipe
  throttle copies the standard input to the standard output while limiting
- bandwidth to the specified maximum.
+ bandwidth to the specified maximum. This can help to limit resources 
+ (bandwidth, CPU time,...) when using it together with programs that 
+ don't support throttling natively.
