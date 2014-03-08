@@ -7,4 +7,4 @@ throttle (1.2-1) unstable; urgency=low
   * Added hardening according to instructions on
     https://wiki.debian.org/Hardening#dpkg-buildflags
 
- -- Martin Steghöfer <martin@steghoefer.eu>  Thu, 08 Nov 2012 22:51:11 +0100
+ -- Martin Steghöfer <martin@steghoefer.eu>  Sat, 08 Mar 2014 11:41:12 +0100
